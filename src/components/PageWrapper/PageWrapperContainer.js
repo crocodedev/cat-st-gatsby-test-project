@@ -13,7 +13,7 @@ const PageWrapper = ({ title, rightSide, leftSide, columnTitle }) => {
   return (
     <PageWrapperContainer>
       <PageWrapperHeading>
-        <PageWrapperLogo src="./images/logo.svg" />
+        <PageWrapperLogo src="/images/logo.svg" />
         <PageWrapperTitle>{title}</PageWrapperTitle>
       </PageWrapperHeading>
       <PageContentWrapper>

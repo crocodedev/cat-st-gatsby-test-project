@@ -21,7 +21,7 @@ const PaymentDetails = () => {
       <PaymentDetailsStack>
         <PaymentDetailsItem>
           <PaymentDetailsItem onClick={() => handleSetActive('paypal')}>
-            <PaymentDetailsItemImage src="./images/paypal.png" />
+            <PaymentDetailsItemImage src="/images/paypal.png" />
           </PaymentDetailsItem>
           <PaymentDetailsItemContent active={active === 'paypal'}>
             InformationInformation Information Information Information Information
@@ -30,7 +30,7 @@ const PaymentDetails = () => {
         </PaymentDetailsItem>
         <PaymentDetailsItem>
           <PaymentDetailsItem onClick={() => handleSetActive('creditCard')}>
-            <PaymentDetailsItemImage src="./images/creditcard.png" />
+            <PaymentDetailsItemImage src="/images/creditcard.png" />
           </PaymentDetailsItem>
           <PaymentDetailsItemContent active={active === 'creditCard'}>
             InformationInformation Information Information Information Information

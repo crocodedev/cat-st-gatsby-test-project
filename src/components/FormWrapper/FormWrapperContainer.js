@@ -16,22 +16,22 @@ import {
 
 const _defaultCountries = [
   {
-    icon: './images/flag-australia.png',
+    icon: '/images/flag-australia.png',
     prefix: '+7',
     title: 'poland',
   },
   {
-    icon: './images/flag-australia.png',
+    icon: '/images/flag-australia.png',
     prefix: '+63',
     title: 'australia',
   },
   {
-    icon: './images/flag-australia.png',
+    icon: '/images/flag-australia.png',
     prefix: '+1',
     title: 'usa',
   },
   {
-    icon: './images/flag-australia.png',
+    icon: '/images/flag-australia.png',
     prefix: '+71',
     title: 'australia',
   },

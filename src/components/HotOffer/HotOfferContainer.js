@@ -16,7 +16,7 @@ const HotOfferProducts = ({ marginBottom, variant }) => {
     <HotOfferWrapper variant={variant} marginBottom={marginBottom}>
       <HotOfferTitle>Only For Cool Cats And Cute Cats</HotOfferTitle>
       <HotOfferContent variant={variant}>
-        <HotOfferImage src="./images/cat-street-hero-olive_2000.webp" />
+        <HotOfferImage src="/images/cat-street-hero-olive_2000.webp" />
         <HotOfferDescriptionWrapper variant={variant}>
           <HotOfferDescription>
             Add the “Catnip” cover to your order and save 5%

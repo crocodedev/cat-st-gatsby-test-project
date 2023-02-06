@@ -38,6 +38,7 @@ const PageSideColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 13px;
+  width: 100%;
 
   ${({ theme }) => theme.breakpoints.up('xl')} {
     max-width: 375px;
