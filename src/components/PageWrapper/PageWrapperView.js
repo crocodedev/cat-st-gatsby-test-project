@@ -3,6 +3,8 @@ import styled from '@emotion/styled'
 const PageWrapperContainer = styled.div`
   background: radial-gradient(50% 50% at 50% 50%, rgba(241, 238, 233, 0.16) 0%, #f1eee9 100%);
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   padding-top: 36px;
   display: flex;
   flex-direction: column;
