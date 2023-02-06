@@ -23,6 +23,19 @@ const CartProductItemImage = styled.img`
 const CartProductItemContent = styled.div`
   display: grid;
   row-gap: 15px;
+
+  ${({ theme }) => theme.breakpoints.down('sm')} {
+    flex 0 1 65%;
+  }
+  ${({ theme }) => theme.breakpoints.between('sm', 'md')} {
+    flex 0 1 45%;
+  }
+  ${({ theme }) => theme.breakpoints.between('md', 'lg')} {
+    flex 0 1 38%;
+  }
+  ${({ theme }) => theme.breakpoints.between('lg', 'xl')} {
+    flex 0 1 30%;
+  }
 `
 
 const CartProductItemTitle = styled.h3`
