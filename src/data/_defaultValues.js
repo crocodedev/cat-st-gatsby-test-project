@@ -14,14 +14,14 @@ export const _defaultProducts = [
     title: 'Bouclé Bungalow “Creme” Cover',
     price: 239,
     quantity: 1,
-    image: './images/cat-street-creme_2000.webp',
+    image: '/images/cat-street-creme_2000.webp',
     id: 1,
   },
   {
     title: 'Replacement Cover in “Catnip”',
     price: 129,
     quantity: 1,
-    image: './images/cat-street-blanket.webp',
+    image: '/images/cat-street-blanket.webp',
     id: 2,
   },
 ]
