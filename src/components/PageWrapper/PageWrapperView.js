@@ -17,6 +17,7 @@ const PageWrapperContainer = styled.div`
 
 const PageWrapperLogo = styled.img`
   position: absolute;
+  object-fit: contain;
   left: 54px;
 `
 
@@ -24,13 +25,20 @@ const PageContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 1248px;
-  padding: 0 20px;
   margin: 0 auto;
   gap: 120px;
   width: 100%;
+  ${({ theme }) => theme.breakpoints.down('sm')} {
+    padding: 0 5px;
+  }
+
   ${({ theme }) => theme.breakpoints.down('xl')} {
     flex-direction: column;
     align-items: center;
+  }
+
+  ${({ theme }) => theme.breakpoints.up('sm')} {
+    padding: 0 20px;
   }
 `
 

@@ -7,7 +7,13 @@ const OrderSummaryWrapper = styled.div`
   padding-top: 10px;
   padding-bottom: 19px;
 
-  ${({ variant }) => (variant === 'checkout' ? 'padding-left: 8px;  padding-right: 8px;' : '')};
+  ${({ variant, theme }) =>
+    variant === 'checkout'
+      ? `${theme.breakpoints.up('sm')} {
+    padding-left: 8px;
+    padding-right: 8px;
+  }`
+      : ''};
 `
 
 const OrderSummaryItem = styled.div`

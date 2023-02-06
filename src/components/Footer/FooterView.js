@@ -18,6 +18,8 @@ const FooterStack = styled.div`
   display: flex;
   gap: 30px;
 `
-const FooterImage = styled.img``
+const FooterImage = styled.img`
+  object-fit: contain;
+`
 
 export { FooterWrapper, FooterText, FooterStack, FooterImage }

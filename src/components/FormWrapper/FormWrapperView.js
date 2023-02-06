@@ -79,6 +79,7 @@ const FormWrapperSelectCode = styled.div`
 const FormWrapperSelectFlag = styled.img`
   width: 24px;
   height: 14px;
+  object-fit: contain;
 `
 
 const FormWrapperSelectOptionStack = styled.div`

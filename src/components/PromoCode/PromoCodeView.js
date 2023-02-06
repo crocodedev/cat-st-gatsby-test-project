@@ -2,11 +2,12 @@ import styled from '@emotion/styled'
 
 const PromoCodeWrapper = styled.div`
   padding-bottom: ${({ variant }) => (variant === 'checkout' ? '24px' : '45px')};
-  ${({ variant }) =>
+  ${({ variant, theme }) =>
     variant === 'checkout'
-      ? `padding-left: 8px;
-  padding-right: 7px;
-  `
+      ? `${theme.breakpoints.up('sm')} {
+        padding-left: 8px;
+        padding-right: 8px;
+      }`
       : ''};
   display: flex;
   flex-direction: column;

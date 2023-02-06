@@ -31,7 +31,7 @@ const dynamicStyle = ({ theme, variant, size, version }) => css`
 
   ${size === 'large'
     ? `
-  max-width: 316px;
+  max-width: calc(100% - 20px);
   min-height: 54px;
   font-size: 30px;
   font-weight: ${theme.typography.fontWeight.regular};
@@ -72,7 +72,7 @@ const dynamicStyle = ({ theme, variant, size, version }) => css`
     ? `
 
     ${theme.breakpoints.up('md')} {
-      max-width: 359px;
+      max-width: calc(100% - 20px);
       min-height: 65px;
     }
 

@@ -43,6 +43,7 @@ const HotOfferContent = styled.div`
 
 const HotOfferImage = styled.img`
   height: auto;
+  object-fit: contain;
 
   ${({ theme }) => theme.breakpoints.down('sm')} {
     max-width: 162px;

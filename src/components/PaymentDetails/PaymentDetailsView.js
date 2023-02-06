@@ -19,7 +19,9 @@ const PaymentDetailsItem = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.palette.common.black};
   }
 `
-const PaymentDetailsItemImage = styled.img``
+const PaymentDetailsItemImage = styled.img`
+  object-fit: contain;
+`
 
 const PaymentDetailsItemContent = styled.div`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
