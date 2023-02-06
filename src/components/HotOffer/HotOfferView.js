@@ -42,7 +42,7 @@ const HotOfferContent = styled.div`
 `
 
 const HotOfferImage = styled.img`
-  height: max-content;
+  height: auto;
 
   ${({ theme }) => theme.breakpoints.down('sm')} {
     max-width: 162px;

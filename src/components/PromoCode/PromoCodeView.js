@@ -2,6 +2,12 @@ import styled from '@emotion/styled'
 
 const PromoCodeWrapper = styled.div`
   padding-bottom: ${({ variant }) => (variant === 'checkout' ? '24px' : '45px')};
+  ${({ variant }) =>
+    variant === 'checkout'
+      ? `padding-left: 8px;
+  padding-right: 7px;
+  `
+      : ''};
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -100,6 +106,7 @@ const PromoCodeCodesItemRemove = styled.span`
   font-weight: ${({ theme }) => theme.typography.fontWeight.light};
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   transform: rotate(45deg);
+  cursor: pointer;
 `
 
 export {
