@@ -32,7 +32,6 @@ const PromoCodeWrapper = styled.div`
 
     ${theme.breakpoints.up('md')} {
       padding-top: 30px;
-      padding-right: 5px;
     }
   `}
 `
