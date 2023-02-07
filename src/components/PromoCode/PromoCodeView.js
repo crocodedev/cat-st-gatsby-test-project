@@ -16,7 +16,7 @@ const PromoCodeWrapper = styled.div`
 
   ${({ open, theme }) =>
     open
-      ? `padding-top: 24px`
+      ? `padding-top: 22px`
       : `
       padding-right: 18px;
       padding-left: 20px;
@@ -39,8 +39,9 @@ const PromoCodeButtonWrapper = styled.div`
 `
 const PromoCodeTitle = styled.span`
   font-size: 18px;
-  font-weight: ${({ theme }) => theme.typography.fontWeight.light};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
+  color: ${({ theme }) => theme.palette.common.black};
   line-height: 25px;
 `
 
@@ -73,11 +74,13 @@ const PromoCodeApplyButton = styled.button`
   font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   line-height: 30px;
-  text-transform: uppercase;
   border: 1px solid ${({ theme }) => theme.palette.gray.border};
   background-color: ${({ theme }) => theme.palette.common.background};
-  padding: 4px 28px;
+  padding: 7px 28px 0 28px;
   border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 `
 const PromoCodeCodesWrapper = styled.div`
   display: flex;
