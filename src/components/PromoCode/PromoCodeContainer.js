@@ -49,7 +49,7 @@ const PromoCodeContainer = ({ variant }) => {
             </PromoCodeApplyButton>
           </PromoCodeEnterFieldWrapper>
           {appliedCodes.length > 0 && (
-            <PromoCodeCodesWrapper>
+            <PromoCodeCodesWrapper variant={variant}>
               {appliedCodes.map((el) => (
                 <PromoCodeCodesItem key={el}>
                   <PromoCodeCodesItemTitle>{el}</PromoCodeCodesItemTitle>
