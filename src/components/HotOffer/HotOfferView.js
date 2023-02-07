@@ -42,7 +42,7 @@ const HotOfferContent = styled.div`
 `
 
 const HotOfferImage = styled.img`
-  height: auto;
+  height: min-content;
   object-fit: contain;
 
   ${({ theme }) => theme.breakpoints.down('sm')} {

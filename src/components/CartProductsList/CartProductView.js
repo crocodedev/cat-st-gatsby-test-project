@@ -5,16 +5,18 @@ const CartProductListWrapper = styled.div`
   flex-direction: column;
   gap: 8px;
 `
+
 const CartProductItemWrapper = styled.div`
   display: flex;
   gap: 26px;
-  padding-top: 10px;
+  padding-top: 6px;
   padding-right: 9px;
   padding-bottom: 15px;
   padding-left: 5px;
   border-bottom: 0.5px dashed ${({ theme }) => theme.palette.common.black};
   justify-content: space-between;
 `
+
 const CartProductItemImage = styled.img`
   max-width: 98px;
   object-fit: contain;
@@ -25,17 +27,25 @@ const CartProductItemContent = styled.div`
   row-gap: 15px;
 
   ${({ theme }) => theme.breakpoints.down('sm')} {
-    flex 0 1 65%;
+    flex: 0 1 65%;
   }
+
   ${({ theme }) => theme.breakpoints.between('sm', 'md')} {
-    flex 0 1 45%;
+    flex: 0 1 50%;
   }
-  ${({ theme }) => theme.breakpoints.between('md', 'lg')} {
-    flex 0 1 38%;
+
+  ${({ variant, theme }) =>
+    variant === 'checkout'
+      ? `
+  ${theme.breakpoints.between('md', 'lg')} {
+    flex: 0 1 38%;
   }
-  ${({ theme }) => theme.breakpoints.between('lg', 'xl')} {
-    flex 0 1 30%;
+
+  ${theme.breakpoints.between('lg', 'xl')} {
+    flex: 0 1 30%;
   }
+  `
+      : ''}
 `
 
 const CartProductItemTitle = styled.h3`
@@ -43,7 +53,7 @@ const CartProductItemTitle = styled.h3`
   grid-area: 1 / 1 / 1 / 3;
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
-  line-height: 23px;
+  line-height: 25px;
 `
 
 const CartProductItemPrice = styled.span`
@@ -79,6 +89,7 @@ const CartProductItemQuantityPlus = styled.button`
     transform: rotate(90deg);
   }
 `
+
 const CartProductItemQuantityValue = styled.span`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
@@ -91,6 +102,7 @@ const CartProductItemQuantityValue = styled.span`
   width: 24px;
   margin-bottom: -1px;
 `
+
 const CartProductItemQuantityMinus = styled.button`
   display: flex;
   justify-content: center;

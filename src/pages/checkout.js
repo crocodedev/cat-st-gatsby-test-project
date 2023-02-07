@@ -35,7 +35,7 @@ const Checkout = () => {
         rightSide={
           <>
             <SectionWrapper>
-              <CartProductListContainer />
+              <CartProductListContainer variant="checkout" />
               <PromoCode variant="checkout" />
               <OrderSummary variant="checkout" showDelivery />
             </SectionWrapper>

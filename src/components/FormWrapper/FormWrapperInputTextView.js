@@ -10,6 +10,7 @@ const FormWrapperInput = styled.input`
   height: 40px;
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+  color: #424141;
   font-size: 25px;
   line-height: 38px;
   padding-left: 6px;
@@ -42,7 +43,6 @@ const FormWrapperInput = styled.input`
   &:focus ~ label,
   &:not(:focus):valid ~ label {
     ${({ variant }) => (variant === 'mobile' ? `    left: -131px;` : `    left: 0;`)}
-    font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
     color: ${({ theme }) => theme.palette.gray.main};
     font-size: 20px;
     line-height: 10px;
@@ -52,7 +52,7 @@ const FormWrapperInput = styled.input`
 const FormWrapperInputLabel = styled.label`
   position: absolute;
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
   color: ${({ theme }) => theme.palette.gray.subtitle};
   font-size: 25px;
   line-height: 38px;
@@ -70,7 +70,7 @@ const FormWrapperClearButton = styled.button`
   font-size: 20px;
   line-height: 10px;
   text-decoration: underline;
-  color: ${({ theme }) => theme.palette.gray.main};
+  color: #4b4b4b;
   position: absolute;
   ${({ tag }) => (tag === 'textarea' ? 'top: 100px;' : 'top: 50px;')}
   right: 6px;

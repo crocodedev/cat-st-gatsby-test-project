@@ -11,6 +11,7 @@ const PaymentDetailsTitle = styled.h2`
 `
 const PaymentDetailsStack = styled.div`
   border: 1px solid ${({ theme }) => theme.palette.common.black};
+  border-radius: 3px;
 `
 
 const PaymentDetailsItem = styled.div`
@@ -19,6 +20,7 @@ const PaymentDetailsItem = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.palette.common.black};
   }
 `
+
 const PaymentDetailsItemImage = styled.img`
   object-fit: contain;
 `
@@ -30,6 +32,7 @@ const PaymentDetailsItemContent = styled.div`
   ${({ active }) =>
     active
       ? `
+      border-top: 1px solid black;
   max-height: 500px;
   transition: all 0.3s cubic-bezier(1, 0, 1, 0) 0s;  `
       : `

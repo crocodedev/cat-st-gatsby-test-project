@@ -20,10 +20,10 @@ const CartProductListContainer = () => {
 
   return (
     <CartProductListWrapper>
-      {cart.products.map(({ id, image, title, quantity, price }) => (
+      {cart.products.map(({ id, image, title, quantity, price, variant }) => (
         <CartProductItemWrapper key={id}>
           <CartProductItemImage src={image} />
-          <CartProductItemContent>
+          <CartProductItemContent variant={variant}>
             <CartProductItemTitle>{title}</CartProductItemTitle>
             <CartProductItemQuantityWrapper>
               <CartProductItemQuantityMinus onClick={() => updateCart(id, 'remove')} />

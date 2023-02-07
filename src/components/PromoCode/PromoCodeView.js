@@ -14,6 +14,8 @@ const PromoCodeWrapper = styled.div`
   gap: 15px;
   align-items: center;
 
+  ${({ variant, open }) => (variant !== 'checkout' && !open ? 'padding-left: 4px;' : '')}
+
   ${({ open, theme }) =>
     open
       ? `padding-top: 24px`
@@ -60,13 +62,19 @@ const PromoCodeEnterFieldWrapper = styled.div`
 
 const PromoCodeEnterField = styled.input`
   font-size: 18px;
-  font-weight: ${({ theme }) => theme.typography.fontWeight.light};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   line-height: 25px;
-  padding: 6px 7px 8px 7px;
+  padding: 7px 7px 6px 7px;
   border-radius: 2px;
   border: 1px solid ${({ theme }) => theme.palette.gray.border};
   min-width: 203px;
+  &::placeholder {
+    opacity: 1;
+  }
+  &:focus-visible {
+    outline: none;
+  }
 `
 const PromoCodeApplyButton = styled.button`
   font-size: 20px;

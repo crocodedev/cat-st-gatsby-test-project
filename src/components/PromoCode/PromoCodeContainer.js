@@ -27,8 +27,10 @@ const PromoCodeContainer = ({ variant }) => {
   const { appliedCodes, updateDiscountCode } = useContext(CartContext)
 
   const handleUpdateDiscountCode = () => {
-    updateDiscountCode(value)
-    setValue('')
+    if (value !== '') {
+      updateDiscountCode(value)
+      setValue('')
+    }
   }
 
   return (

@@ -7,6 +7,7 @@ const FooterWrapper = styled.div`
   gap: 11px;
   padding-bottom: 100px;
 `
+
 const FooterText = styled.span`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   font-weight: ${({ theme }) => theme.typography.fontWeight.light};
@@ -14,10 +15,12 @@ const FooterText = styled.span`
   line-height: 24px;
   color: #585858;
 `
+
 const FooterStack = styled.div`
   display: flex;
   gap: 30px;
 `
+
 const FooterImage = styled.img`
   object-fit: contain;
 `

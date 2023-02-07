@@ -102,7 +102,7 @@ const DeliveryDetailsModalOpenButton = styled.button`
   font-size: 20px;
   line-height: 20px;
   text-decoration: underline;
-  color: ${({ theme }) => theme.palette.gray.main};
+  color: #4B4B4B;
   margin-left: auto;
   display: block;
   padding-right: 6px;
