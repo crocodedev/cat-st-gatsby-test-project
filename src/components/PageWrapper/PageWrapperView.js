@@ -13,7 +13,7 @@ const PageWrapperContainer = styled.div`
   }
 
   ${({ theme }) => theme.breakpoints.up('lg')} {
-    gap: 154px;
+    gap: 157px;
   }
 `
 
