@@ -4,7 +4,7 @@ const FormWrapperWrapper = styled.div`
   margin-bottom: 60px;
   display: grid;
   gap: 19px;
-  margin-top: 7px;
+  margin-top: 4px;
 `
 const FormWrapperTitle = styled.h2`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
