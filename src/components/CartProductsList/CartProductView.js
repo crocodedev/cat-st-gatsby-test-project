@@ -43,7 +43,7 @@ const CartProductItemTitle = styled.h3`
   grid-area: 1 / 1 / 1 / 3;
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
-  line-height: 23px;
+  line-height: 25px;
 `
 
 const CartProductItemPrice = styled.span`
@@ -89,7 +89,6 @@ const CartProductItemQuantityValue = styled.span`
   justify-content: center;
   align-items: center;
   width: 24px;
-  margin-bottom: -1px;
 `
 const CartProductItemQuantityMinus = styled.button`
   display: flex;
