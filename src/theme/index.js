@@ -36,6 +36,7 @@ const theme = {
       main: '#777777',
       subtitle: '#606060',
       border: '#A0A0A0',
+      semiLight: '#424141',
     },
   },
   typography: {
