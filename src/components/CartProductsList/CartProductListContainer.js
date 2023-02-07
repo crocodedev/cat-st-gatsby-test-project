@@ -15,12 +15,12 @@ import {
   CartProductItemQuantityValue,
 } from './CartProductView'
 
-const CartProductListContainer = () => {
+const CartProductListContainer = ({ variant }) => {
   const { cart, updateCart } = useContext(CartContext)
 
   return (
     <CartProductListWrapper>
-      {cart.products.map(({ id, image, title, quantity, price, variant }) => (
+      {cart.products.map(({ id, image, title, quantity, price }) => (
         <CartProductItemWrapper key={id}>
           <CartProductItemImage src={image} />
           <CartProductItemContent variant={variant}>

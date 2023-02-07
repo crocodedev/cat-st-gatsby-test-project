@@ -1,5 +1,5 @@
 import Layout from '../layout'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import CartOverlay from '../components/CartOverlay/CartOverlayContainer'
 
 const Home = () => {
@@ -7,6 +7,18 @@ const Home = () => {
   const handleSetCartOverlayVisible = () => {
     setCartOverlayVisible(!cartOverlayVisible)
   }
+
+  const handleCloseOverlay = (e) => {
+    if (e.key === 'Escape') {
+      setCartOverlayVisible(false)
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleCloseOverlay)
+    return () => document.removeEventListener('keydown', handleCloseOverlay)
+  }, [])
+
   return (
     <Layout>
       <button type="button" onClick={handleSetCartOverlayVisible}>

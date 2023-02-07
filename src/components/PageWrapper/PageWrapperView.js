@@ -17,10 +17,15 @@ const PageWrapperContainer = styled.div`
   }
 `
 
+const PageWrapperLogoWrapper = styled.img`
+  ${({ theme }) => theme.breakpoints.up('lg')} {
+    position: absolute;
+    left: 54px;
+  }
+`
+
 const PageWrapperLogo = styled.img`
-  position: absolute;
   object-fit: contain;
-  left: 54px;
 `
 
 const PageContentWrapper = styled.div`
@@ -75,10 +80,6 @@ const PageWrapperHeading = styled.div`
   ${({ theme }) => theme.breakpoints.down('lg')} {
     justify-content: flex-start;
     flex-direction: column;
-
-    & > img {
-      position: static;
-    }
   }
   ${({ theme }) => theme.breakpoints.up('lg')} {
     justify-content: center;
@@ -93,6 +94,7 @@ const PageSideColumnTitle = styled.h2`
 `
 
 export {
+  PageWrapperLogoWrapper,
   PageContentWrapper,
   PageSideColumn,
   PageWrapperContainer,

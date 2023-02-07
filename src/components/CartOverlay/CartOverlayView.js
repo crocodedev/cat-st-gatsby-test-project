@@ -92,7 +92,14 @@ const CartOverlayTitle = styled.h2`
 `
 
 const CartOverlayContentBottom = styled.div`
-  max-width: 335px;
+  ${({ theme }) => theme.breakpoints.down('xsm')} {
+    max-width: 335px;
+  }
+
+  ${({ theme }) => theme.breakpoints.up('md')} {
+    max-width: 335px;
+  }
+
   margin: 0 auto;
   width: 100%;
 `
