@@ -9,6 +9,14 @@ const PromoCodeWrapper = styled.div`
   align-items: center;
   padding-right: 5px;
 
+  ${({ variant, theme }) =>
+    variant === 'checkout'
+      ? `${theme.breakpoints.down('sm')} {
+    margin-left: -8px;
+    margin-right: -2px;
+  }`
+      : ''}
+
   ${({ variant, open }) => (variant !== 'checkout' && !open ? 'padding-left: 4px;' : '')}
 
   ${({ open, theme }) =>
