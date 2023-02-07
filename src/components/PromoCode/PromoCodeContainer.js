@@ -42,7 +42,9 @@ const PromoCodeContainer = ({ variant }) => {
               placeholder="Coupon Code"
               onChange={handleSetValue}
             />
-            <PromoCodeApplyButton onClick={handleUpdateDiscountCode}>Apply</PromoCodeApplyButton>
+            <PromoCodeApplyButton onClick={handleUpdateDiscountCode}>
+              <span>APPLY</span>
+            </PromoCodeApplyButton>
           </PromoCodeEnterFieldWrapper>
           {appliedCodes.length > 0 && (
             <PromoCodeCodesWrapper>
