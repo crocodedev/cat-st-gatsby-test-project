@@ -20,7 +20,8 @@ const PageWrapperContainer = styled.div`
 const PageWrapperLogoWrapper = styled.img`
   ${({ theme }) => theme.breakpoints.up('lg')} {
     position: absolute;
-    left: 54px;
+    left: 51px;
+    top: 9px;
   }
 `
 
@@ -63,6 +64,7 @@ const PageSideColumn = styled.div`
 
   ${({ theme }) => theme.breakpoints.up('xl')} {
     max-width: 375px;
+    flex-shrink: 0;
   }
 `
 

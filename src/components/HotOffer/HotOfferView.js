@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 const HotOfferWrapper = styled.div`
   border: 1px solid ${({ theme }) => theme.palette.gray.border};
   background-color: ${({ theme }) => theme.palette.common.accent};
-  ${({ marginBottom }) => marginBottom && 'margin-bottom: 40px'};
+  ${({ marginBottom }) => marginBottom && 'margin-bottom: 29px'};
   ${({ variant }) => (variant === 'checkout' ? 'margin-top: 10px' : '')};
   padding: ${({ variant }) => (variant === 'checkout' ? '18px 20px 28px' : '18px 7px')};
   border-radius: 9px;

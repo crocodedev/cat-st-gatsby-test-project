@@ -25,7 +25,7 @@ const OrderSummaryItem = styled.div`
 const OrderSummaryPriceItems = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${({ variant }) => (variant === 'checkout' ? '8px' : '10px')};
+  gap: 8px;
   ${({ variant }) => (variant === 'checkout' ? ' margin-bottom: 22px;' : '')};
 `
 

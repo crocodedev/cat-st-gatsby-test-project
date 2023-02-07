@@ -2,16 +2,11 @@ import styled from '@emotion/styled'
 
 const PromoCodeWrapper = styled.div`
   padding-bottom: ${({ variant }) => (variant === 'checkout' ? '24px' : '45px')};
-  ${({ variant, theme }) =>
-    variant === 'checkout'
-      ? `${theme.breakpoints.up('sm')} {
-        padding-left: 8px;
-        padding-right: 8px;
-      }`
-      : ''};
   display: flex;
+  padding-right: 5px;
+  padding-left: ${({ variant }) => (variant === 'checkout' ? '8px' : '10px')};
   flex-direction: column;
-  gap: 15px;
+  gap: 17px;
   align-items: center;
 
   ${({ variant, open }) => (variant !== 'checkout' && !open ? 'padding-left: 4px;' : '')}
@@ -58,7 +53,8 @@ const PromoCodeButton = styled.button`
 
 const PromoCodeEnterFieldWrapper = styled.div`
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
+  width: 100%;
 `
 
 const PromoCodeEnterField = styled.input`
@@ -92,15 +88,15 @@ const PromoCodeApplyButton = styled.button`
 `
 const PromoCodeCodesWrapper = styled.div`
   display: flex;
-  flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
+  width: 100%;
 `
 
 const PromoCodeCodesItem = styled.div`
   padding: 2px 10px;
   display: flex;
-  gap: 5px;
+  gap: 7px;
   position: relative;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.palette.common.background};
