@@ -39,8 +39,9 @@ const PromoCodeButtonWrapper = styled.div`
 `
 const PromoCodeTitle = styled.span`
   font-size: 18px;
-  font-weight: ${({ theme }) => theme.typography.fontWeight.light};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.thin};
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
+  color: ${({ theme }) => theme.palette.common.black};
   line-height: 25px;
 `
 
@@ -48,7 +49,7 @@ const PromoCodeButton = styled.button`
   font-size: 18px;
   font-weight: ${({ theme }) => theme.typography.fontWeight.light};
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
-  color: ${({ theme }) => theme.palette.gray.main};
+  color: ${({ theme }) => theme.palette.gray.main};ф
   text-decoration: underline;
   line-height: 25px;
 `
