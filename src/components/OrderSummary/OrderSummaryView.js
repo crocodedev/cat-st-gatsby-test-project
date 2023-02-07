@@ -55,7 +55,7 @@ const OrderSummaryCurrency = styled.span`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
   font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
   line-height: 25px;
-  color: #939393;
+  color: ${({ theme }) => theme.palette.gray.darkGray};
 `
 
 const OrderSummaryPrice = styled.span`

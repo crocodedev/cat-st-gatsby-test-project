@@ -100,7 +100,7 @@ const CartProductItemQuantityValue = styled.span`
   justify-content: center;
   align-items: center;
   width: 24px;
-  margin-bottom: -1px;
+  padding-top: 3px;
 `
 
 const CartProductItemQuantityMinus = styled.button`

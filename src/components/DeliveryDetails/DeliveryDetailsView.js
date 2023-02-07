@@ -44,9 +44,10 @@ const DeliveryDetailsShippingOption = styled.input`
 `
 const DeliveryDetailsOptionTitle = styled.span`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.light};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
   font-size: 25px;
   line-height: 37px;
+  color: ${({ theme }) => theme.palette.gray.semiLight};
 `
 const DeliveryDetailsDropdownSelector = styled.select`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
@@ -69,9 +70,10 @@ const DeliveryDetailsDropdownOption = styled.option`
 
 const DeliveryDetailsShippingPrice = styled.span`
   font-family: ${({ theme }) => theme.typography.fontFamilyNeueHaasUnicaPro};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.light};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
   font-size: 25px;
   line-height: 37px;
+  color: ${({ theme }) => theme.palette.gray.semiLight};
 `
 
 const DeliveryDetailsShippingOptionWrapper = styled.div`
