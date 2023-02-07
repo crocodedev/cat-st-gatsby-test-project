@@ -30,6 +30,7 @@ const PageContentWrapper = styled.div`
   margin: 0 auto;
   gap: 120px;
   width: 100%;
+
   ${({ theme }) => theme.breakpoints.down('sm')} {
     padding: 0 5px;
   }
@@ -41,6 +42,11 @@ const PageContentWrapper = styled.div`
 
   ${({ theme }) => theme.breakpoints.up('sm')} {
     padding: 0 20px;
+    flex-shrink: 0;
+  }
+
+  ${({ theme }) => theme.breakpoints.up('xl')} {
+    flex-shrink: 0;
   }
 `
 
